@@ -44,11 +44,10 @@ class LinebotController < ApplicationController
           }
           image = {
             type: 'image',
-            originalContentUrl:'https://gyazo.com/fceccec268a8fe872e5a8c3d35e0005d'
+            originalContentUrl:'https://gyazo.com/fceccec268a8fe872e5a8c3d35e0005d',
             previewImageUrl:'https://gyazo.com/fceccec268a8fe872e5a8c3d35e0005d'
           }
-          client.reply_message(event['replyToken'], message)
-          client.reply_message(event['replyToken'], image)
+          client.reply_message(event['replyToken'], message,image)
         end
       end
     }
