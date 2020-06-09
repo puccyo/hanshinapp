@@ -32,7 +32,8 @@ class LinebotController < ApplicationController
       else
         responce = "まだ未実装です、すみません"
       end
-      
+      event.image['image'].include?['甲子園']
+
       case event
       when Line::Bot::Event::Message
         case event.type
@@ -41,7 +42,13 @@ class LinebotController < ApplicationController
             type: 'text',
             text: responce
           }
+          image = {
+            type: 'image',
+            originalContentUrl:'https://gyazo.com/fceccec268a8fe872e5a8c3d35e0005d'
+            previewImageUrl:'https://gyazo.com/fceccec268a8fe872e5a8c3d35e0005d'
+          }
           client.reply_message(event['replyToken'], message)
+          client.reply_message(event['replyToken'], image)
         end
       end
     }
