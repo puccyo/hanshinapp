@@ -30,7 +30,7 @@ class LinebotController < ApplicationController
       elsif event.message['text'].include?("江越大賀")
         responce = "右投げ右打ち,外野手,2014年ドラフト3位,管理者の一言・・・矢野監督からも「野人」とも称されるほどの身体能力を誇る、ただボールとバットが当たらない"
       else
-        responce = "まだ未実装です、すみません"
+        responce = "まだまだ未実装です、すみません"
       end
       
       case event
@@ -52,8 +52,8 @@ class LinebotController < ApplicationController
     #   when Line::Bot::Event::MessageType::Image
     #       image = {
     #         type: 'image',
-    #         originalContentUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
-    #         previewImageUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
+    #         originalContentUrl:'https://gyazo.com/73bd4a448a1a32dd3d6beeac727b160a.jpeg'
+    #         previewImageUrl:'https://gyazo.com/73bd4a448a1a32dd3d6beeac727b160a.jpeg'
     #       }
     #       client.reply_message(event['replyToken'], image)
     #   end
