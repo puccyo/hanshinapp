@@ -45,19 +45,19 @@ class LinebotController < ApplicationController
         end
       end
     }
-    event.image['image'].include?("甲子園")
-    case event
-    when Line::Bot::Event::Mesaage
-      case event.type
-      when Line::Bot::Event::MessageType::Image
-          image = {
-            type: 'image',
-            originalContentUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
-            previewImageUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
-          }
-          client.reply_message(event['replyToken'], image)
-      end
-    end
+    # event.image['image'].include?("甲子園")
+    # case event
+    # when Line::Bot::Event::Mesaage
+    #   case event.type
+    #   when Line::Bot::Event::MessageType::Image
+    #       image = {
+    #         type: 'image',
+    #         originalContentUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
+    #         previewImageUrl:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fprcm.jp%2Flist%2F%25E7%2594%25B2%25E5%25AD%2590%25E5%259C%2592%2520%25E7%2590%2583%25E5%25A0%25B4&psig=AOvVaw2WqMYcxrGswqjsPLLve0kX&ust=1591932760114000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7menp-OkCFQAAAAAdAAAAABAJ'
+    #       }
+    #       client.reply_message(event['replyToken'], image)
+    #   end
+    # end
     head :ok
   end
 end
