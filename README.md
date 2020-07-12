@@ -1,24 +1,12 @@
-# README
+# このアプリを作った目的
+普段からよく使っているlineを使用してアプリを作り長く愛着のでるアプリを作ろうと思った。
+そのために自分の好きな野球をモチーフとしてlineアプリを作りました。
+まだまだ、改良点ややりたいことはたくさんあるのでここから徐々に増やしていこうと思っています。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# どう言うことができるか
+現状では選手名を入れると対応した選手の簡単なプロフィールなどが表記されます。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 今後どうしていくか
+画像や動画などを差し込んでいろんな応援歌や、歴史的快挙などを写したい。
+試合状況がわかるような機能を付けてみたい。
+お天気情報などで球場の近くがどうなっているかわかるようにする。
